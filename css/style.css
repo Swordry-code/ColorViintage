@@ -32,7 +32,7 @@ header {
 
 .content {
     background-color: gold;
-    height:200rem;
+    height: 200rem;
     display: flex;
     align-items: center;
     justify-content: center;
