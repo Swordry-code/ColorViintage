@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 1rem;
+  margin-top: 7rem;
+}
+
+.diapo {
+  height: 400px;
+  width: 100%;
+  background-color: rgba(226, 117, 117, 0.61);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.diapo img {
+  height: 100%;
+  aspect-ratio: 1;
+  display: none;
+  width: 75%;
+}
+.diapo .active {
+  display: block;
+  animation: fade 0.8s;
+}
+.diapo svg {
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.title-line {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  border: 3px black solid;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.line {
+  display: grid;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  grid-template-columns: repeat(4, 225px);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  min-width: 225px;
+  width: 225px;
+  color: white;
+  transition: ease 0.2s;
+  box-shadow: 3px 3px 3px rgba(102, 102, 102, 0.418);
+  background-color: #303030;
+  border-radius: 5px;
+}
+.card img {
+  width: 95%;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.card .bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 25%;
+}
+.card .bottom p {
+  margin: 0;
+}
+.card .informations {
+  padding-left: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 1rem;
+  height: 100%;
+  width: 75%;
+}
+.card .prix-panier {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 20px;
+  height: 100%;
+  width: 25%;
+}
+.card .prix-panier svg {
+  height: 40%;
+  color: #3d3d3d;
+}
+
+.card:hover {
+  transition: ease 0.5s;
+  background-color: rgba(102, 102, 102, 0.418);
+}
+
+footer {
+  background-color: #242529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+}
+
+/*# sourceMappingURL=content.css.map */

@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 1rem;
+  margin-top: 7rem;
+}
+
+.content .title-line {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.diapo {
+  height: 400px;
+  width: 100%;
+  background-color: rgba(226, 117, 117, 0.61);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.diapo img {
+  height: 100%;
+  aspect-ratio: 0.75;
+  max-height: 100%;
+  display: none;
+}
+
+.diapo .active {
+  display: block;
+  -webkit-animation: fade 0.8s;
+          animation: fade 0.8s;
+}
+
+.diapo svg {
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 400px;
+  width: 225px;
+  background-color: blanchedalmond;
+  color: black;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.card :hover {
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  width: 260px;
+  height: 310px;
+}
+
+.card img {
+  width: 100%;
+  height: 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid black 1px;
+}
+
+.card .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 25%;
+}
+
+.card .bottom p {
+  margin: 0;
+}
+
+.card .informations {
+  padding-left: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1rem;
+  height: 100%;
+  width: 75%;
+}
+
+.card .prix-panier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  height: 100%;
+  width: 25%;
+}
+
+.card .prix-panier svg {
+  height: 40%;
+  color: #3d3d3d;
+}
+
+footer {
+  background-color: #242529;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3.5rem;
+}
+/*# sourceMappingURL=content.css.map */
