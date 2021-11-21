@@ -6,8 +6,6 @@ header {
     border-style: none none solid;
     border-color: black;
     border-width: 1px;
-    /*background-image: url("background.jpeg");
-    background-repeat: no-repeat;*/
     background-size: 100%;
     background-color: rgb(116, 116, 255);
     position: fixed;
@@ -76,7 +74,7 @@ header {
         margin-right: 2rem;
         margin-bottom: 0.5rem;
     }
-    
+
     p {
         font-size: 50px;
         margin-left: 3rem;
@@ -103,7 +101,6 @@ header {
 
     a {
         margin-left: 2rem;
-        margin-right: 2rem; 
+        margin-right: 2rem;
     }
 }
-
