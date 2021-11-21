@@ -21,3 +21,6 @@ function slideSuivante()
 }
 
 suivant.addEventListener('click', slideSuivante);
+setInterval(() => {
+    slideSuivante();
+}, 6000);

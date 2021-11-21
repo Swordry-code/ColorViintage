@@ -20,8 +20,12 @@ body {
     margin-top: 7rem;
 }
 
+.lead {
+    width: 100%;
+}
+
 .diapo {
-    height: 400px;
+    height: 600px;
     width: 100%;
     background-color: rgba(226, 117, 117, 0.61);
     display: flex;
@@ -30,9 +34,8 @@ body {
 
     img {
         height: 100%;
-        aspect-ratio: 1;
+        aspect-ratio: calc(16/9);
         display: none;
-        width: 75%;
     }
 
     .active {
@@ -62,9 +65,9 @@ body {
 .title-line {
     margin-bottom: 2rem;
     margin-top: 4rem;
-    border: 3px black solid;
+    background-color: black;
+    color: white;
     padding: 1rem;
-    border-radius: 25px;
 }
 
 .line {
@@ -86,18 +89,15 @@ body {
     height: 300px;
     min-width: 225px;
     width: 225px;
-    color: white;
+    color: black;
     transition: ease 0.2s;
-    box-shadow: 3px 3px 3px rgba(102, 102, 102, 0.418);
-    background-color: rgb(48, 48, 48);
-    border-radius: 5px;
+    cursor: pointer;
 
     img {
         width: 100%;
         aspect-ratio: 1;
         align-items: center;
         justify-content: center;
-        border-radius: 5px;
     }
 
     .bottom {
@@ -107,6 +107,7 @@ body {
         justify-content: space-between;
         width: 100%;
         height: 25%;
+        margin-top: 0.5rem;
 
         p {
             margin: 0;
@@ -114,7 +115,6 @@ body {
     }
 
     .informations {
-        padding-left: 0.4rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
