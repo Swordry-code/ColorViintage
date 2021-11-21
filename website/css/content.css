@@ -16,7 +16,6 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding-bottom: 1rem;
-  margin-top: 7rem;
 }
 
 .lead {
@@ -41,10 +40,19 @@ body {
   animation: fade 0.8s;
 }
 .diapo svg {
+  position: absolute;
   color: white;
   width: 3rem;
   height: 3rem;
   position: relative;
+}
+.diapo .left-arrow {
+  top: 50%;
+  left: 0;
+}
+.diapo .right-arrow {
+  right: 0;
+  top: 20%;
 }
 
 @keyframes fade {
@@ -61,6 +69,7 @@ body {
   background-color: black;
   color: white;
   padding: 1rem;
+  font-size: large;
 }
 
 .line {
